@@ -6,6 +6,7 @@ import Input from "./components/Events/Input.vue";
 import Itaration from "./components/ItarationComponent/Itaration.vue";
 import WithApi from "./components/ItarationComponent/WithApi.vue";
 import Reactive from "./components/My Reactive Component/Reactive.vue";
+import View from "./components/Props/View.vue";
 import CombineStyle from "./components/Styleing/CombineStyle.vue";
 import GlobalStyle from "./components/Styleing/GlobalStyle.vue";
 import LocalStyle from "./components/Styleing/LocalStyle.vue";
@@ -14,6 +15,6 @@ import Form from "./components/Use v-model/Form.vue";
 </script>
 <template>
   <div>
-    <Form />
+    <View />
   </div>
 </template>
