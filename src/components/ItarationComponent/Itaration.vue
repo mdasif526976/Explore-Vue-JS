@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from "vue";
-let a = 10;
 let data = ref(["Asif", "Fahim", "Naim", "Taif"]);
 </script>
 

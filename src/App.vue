@@ -10,9 +10,10 @@ import CombineStyle from "./components/Styleing/CombineStyle.vue";
 import GlobalStyle from "./components/Styleing/GlobalStyle.vue";
 import LocalStyle from "./components/Styleing/LocalStyle.vue";
 import ModuleStyle from "./components/Styleing/ModuleStyle.vue";
+import Form from "./components/Use v-model/Form.vue";
 </script>
 <template>
   <div>
-    <WithApi />
+    <Form />
   </div>
 </template>
