@@ -1,4 +1,5 @@
 <script setup>
+import { provide, ref } from "vue";
 import ComponentEvent from "./components/Component Events/ComponentEvent.vue";
 import Computed from "./components/Computed Properties/Computed.vue";
 import Conditional from "./components/Conditional Renderring/Conditional.vue";
@@ -15,7 +16,19 @@ import GlobalStyle from "./components/Styleing/GlobalStyle.vue";
 import LocalStyle from "./components/Styleing/LocalStyle.vue";
 import ModuleStyle from "./components/Styleing/ModuleStyle.vue";
 import Form from "./components/Use v-model/Form.vue";
+import School from "./components/Provide & Inject/School.vue";
+import LifecycleHooks from "./components/LifeCycle Hooks/LifecycleHooks.vue";
+import Watch from "./components/Watchers/Watch.vue";
+const title = ref("My Vue js Website");
+document.title = title.value;
+const user = ref({ name: "Ali Mahmud", age: 20, class: "100" });
+provide("student", user);
+const show = ref(true);
 </script>
 <template>
-  <SlotsView></SlotsView>
+  <div>
+    <Watch />
+  </div>
+  <!-- <LifecycleHooks v-if="show" /> -->
+  <!-- <button @click="show = !show">hide</button> -->
 </template>
